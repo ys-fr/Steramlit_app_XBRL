@@ -218,7 +218,15 @@ def page1():
 page1()
 
 st.header("How to use this application.")
-st.markdown("to be written...")
+with st.container():
+    col1,col2 = st.columns(2)
+    with col1:
+        st.header("English")
+        st.video("https://youtu.be/cp-riphc5yM")
+        pass
+    with col2:
+        st.header("Japanese")
+        st.video("https://youtu.be/N6cMuxjTH88")
 
 st.header("Credit.")
 st.markdown("Author: Yuki Sato. contact: yuki.sato.f.r(at)gmail.com")
